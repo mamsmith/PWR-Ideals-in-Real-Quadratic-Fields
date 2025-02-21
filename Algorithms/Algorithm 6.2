@@ -1,0 +1,19 @@
+Algorithm 2:
+Input: k,l odd such that gcd(k,l)=1 and k<l<sqrt(3)k
+
+
+SageMath:
+
+def A2(k,l):
+	if gcd(k,l)==1:
+		(a,b,c)=xgcd(k^2,l^2)
+		c1=abs(c)
+		b1=abs(b)
+		d1=k^2+4*c1
+		d2=l^2+4*b1
+		n=1
+		while d1.is_squarefree()==False or d2.is_squarefree()==False:
+			d1=d1+2*n*k^2
+			d2=d2+2*n*l^2
+			n=n+1
+		return(d1,d2)
