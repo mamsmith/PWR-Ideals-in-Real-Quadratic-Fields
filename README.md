@@ -10,5 +10,5 @@ This directory contains the PARI/GP code used to search for PWR ideals in real q
 ### d=1mod4
 This codesearches exhaustively for PWR with $d \equiv 1 \pmod 4$, $d_1$ less than some assigned bound $b$, $d_2$ in the range $[d_1+1,2*d_1]$ and $k,l$ less than another assigned bound $c$. 
 
-###d=3mod4
+### d=3mod4
 This codesearches exhaustively for PWR with $d \equiv 3 \pmod 4$, $d_1$ less than some assigned bound $b$, $d_2$ in the range $[d_1+1,2*d_1]$ and $k,l$ less than another assigned bound $c$. 
