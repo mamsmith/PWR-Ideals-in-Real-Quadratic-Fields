@@ -7,12 +7,9 @@ lis=[];
 {
     for (d1=2,boud,
         for (d2=d1+1,3*d1,
-            if (issquarefree(d1)==1&&issquarefree(d2)
-==1&&gcd(d1,d2)==1&&Mod(d1*d2,4)==Mod(1,4),d=d1*d2;
-            for (l=1,boukl,for(k=1,
-boukl, 
-                if (abs((2*k+l)^2*d2-l^2*d1)==4,lis=Set(concat(lis,[[ [d1,d2],[k,l]
-, (2*k +l)^2*d2-l^2*d1]]))))))));
+            if (issquarefree(d1)==1&&issquarefree(d2)==1&&gcd(d1,d2)==1&&Mod(d1*d2,4)==Mod(1,4),d=d1*d2;
+            for (l=1,boukl,for(k=1,boukl, 
+                if (abs((2*k+l)^2*d2-l^2*d1)==4,lis=Set(concat(lis,[[ [d1,d2],[k,l], (2*k +l)^2*d2-l^2*d1]]))))))));
 }
 print("lis_result"," ",lis);
 for(i=1,length(lis),write("TEXTFILE.txt", lis[i]))
